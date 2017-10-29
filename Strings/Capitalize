@@ -1,0 +1,11 @@
+def capitalize(string):
+    for k in string.split():
+        q = list(k)
+        number = q[0].isdigit()
+        if not number:
+            string = string.replace(k, k.title(), 1)
+    return string 
+        
+            
+        
+          
