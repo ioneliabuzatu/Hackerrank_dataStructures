@@ -1,0 +1,12 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+n,m = map(int, (raw_input().split()))
+array = list(map(int, (raw_input().split())))
+a = set(map(int,raw_input().split())) 
+b = set(map(int,raw_input().split()))
+count=0
+for i in array:
+    if i in a:
+        count+=1
+    elif i in b:
+        count-=1
+print count    
