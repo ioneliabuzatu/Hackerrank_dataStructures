@@ -1,0 +1,16 @@
+students = []
+for _ in range(int(raw_input())):
+    name_student = raw_input()
+    score = float(raw_input())
+    lista = [score,name_student]
+    students.append(lista)
+    students.sort()
+min = students[0][0]
+i=0
+for i in range(len(students)):
+    if students[i][0]>min:
+        min = students[i][0]
+        break
+for i in range(len(students)):
+    if students[i][0]==min:
+        print students[i][1]
