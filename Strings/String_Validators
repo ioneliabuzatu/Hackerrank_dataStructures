@@ -1,0 +1,26 @@
+#check if a string is composed of alphabetical characters, alphanumeric characters, digits, etc.
+if __name__ == '__main__':
+    s = raw_input()
+    
+alnum=''
+alpha=''
+digit=''
+lower=''
+upper=''
+alnum=alpha=digit=lower=upper= False
+for i in s: #loop trough the input
+        if i.isalnum(): #if encounters a chacarther that is alphabetical and numeric
+            alnum=True
+        if i.isalpha(): #if encounters a character that is alphabetical 
+            alpha=True
+        if i.isdigit():#if encounters a digit
+            digit=True
+        if i.islower():#if encounters a lowercase character
+            lower=True  
+        if i.isupper():#if encounters an uppercase character
+            upper=True
+print alnum
+print alpha
+print digit
+print lower
+print upper
