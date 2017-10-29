@@ -1,0 +1,10 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+M, m, N, n = int(raw_input()), set(map(int, raw_input().strip().split())), int(raw_input()), set(map(int, raw_input().strip().split()))
+L = []
+L.extend(m.difference(n))
+L.extend(n.difference(m))
+for i in sorted(L):
+    print i
+
+
+
