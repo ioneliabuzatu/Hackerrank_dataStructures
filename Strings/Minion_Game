@@ -1,0 +1,17 @@
+vowels='AEIOU'
+def minion_game(string):
+    stuart_score=0
+    kevin_score=0
+    length=len(s)
+    for i in range(length):
+        if s[i] not in vowels:
+            stuart_score += length-i
+        else:
+            kevin_score += length-i
+    if stuart_score>kevin_score:
+        print "Stuart %s" %stuart_score
+    elif kevin_score>stuart_score:
+        print "Kevin %s" %kevin_score
+    else:
+        print "Draw" 
+        
