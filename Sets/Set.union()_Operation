@@ -1,0 +1,6 @@
+a=raw_input()
+inp=set(map(int, raw_input().split()))
+c=raw_input()
+b=set(map(int, raw_input().split()))
+print len(inp|b)
+
