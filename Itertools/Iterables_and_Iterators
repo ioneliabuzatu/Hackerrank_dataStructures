@@ -1,0 +1,7 @@
+from itertools import combinations
+raw_input()
+list_lower = raw_input().split()
+n_index = int(raw_input())
+comb = list(combinations(list_lower, n_index))
+summ = sum('a' in i for i in comb)
+print summ / float(len(comb))
