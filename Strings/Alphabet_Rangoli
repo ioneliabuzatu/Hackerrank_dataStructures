@@ -1,0 +1,9 @@
+import string
+alpha = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+n = int(raw_input())
+
+for i in range(n-1,-n,-1):
+    l = [alpha[j] for j in range(n-1,abs(i),-1)]
+    l.append(alpha[abs(i)])
+    l.extend([alpha[j] for j in range(abs(i)+1,n)])
+    print '-'.join(l).center(4*(n-1)+1,'-')
