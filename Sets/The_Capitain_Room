@@ -1,0 +1,10 @@
+firstline=raw_input()
+list_room= map(int, raw_input().split()) 
+set_list = set(list_room) 
+for i in set_list: 
+    list_room.remove(i) 
+    if i not in list_room: 
+        print i 
+        break
+        
+      
