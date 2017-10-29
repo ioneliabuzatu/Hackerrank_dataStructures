@@ -1,0 +1,7 @@
+def merge_the_tools(string, k):
+    for i in range(0,len(string),k):
+        new_string=str()
+        for character in string[i:k+i]:
+            if character not in new_string:
+                new_string += character
+        print new_string
