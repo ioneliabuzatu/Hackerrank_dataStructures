@@ -1,0 +1,10 @@
+s=set(map(int, raw_input().split()))
+n=input()
+p=raw_input()
+subs=set(map(int, raw_input().split()))
+if not s.issuperset(subs):
+    print False
+else:
+    print True
+    
+   
