@@ -1,0 +1,10 @@
+tot = int(raw_input())
+A =set(map(int,raw_input().split(" ")))
+nset = int(raw_input())
+for i in range(nset):
+    lst = raw_input().split(" ")
+    s = set(map(int,raw_input().split(" ")))
+    cmd = 'A.'+lst[0]+'('+'s' +')'
+    eval(cmd)
+print sum(A)
+
