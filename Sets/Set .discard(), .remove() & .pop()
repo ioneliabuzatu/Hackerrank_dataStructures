@@ -1,0 +1,10 @@
+n = int(raw_input())
+s = set(map(int, raw_input().split())) 
+commands = int(raw_input())
+
+for i in range(commands):
+    line = raw_input().split()
+    if line[0] == 'pop': s.pop()
+    if line[0] == 'remove': s.remove(int(line[1]))
+    if line[0] == 'discard': s.discard(int(line[1]))
+print sum(s)
