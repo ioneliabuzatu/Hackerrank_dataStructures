@@ -1,0 +1,10 @@
+from collections import OrderedDict
+dic = OrderedDict()
+for _ in range(int(raw_input())):
+    l = raw_input().split()
+    food, price = ' '.join(l[:-1]), int(l[-1])
+    dic[food] = dic[food] + int(price) if food in dic else int(price)
+for i in dic:
+    print i, dic[i]
+    
+      
