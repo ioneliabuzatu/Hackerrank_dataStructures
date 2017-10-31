@@ -1,0 +1,6 @@
+from collections import namedtuple
+n, student = int(raw_input()), namedtuple('student',raw_input())
+sum=0      
+for i in range(n): 
+    sum += float(student(*raw_input().split()).MARKS)
+print sum/n
