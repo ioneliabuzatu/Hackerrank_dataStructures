@@ -1,0 +1,5 @@
+from collections import Counter
+c = Counter(raw_input())
+c = sorted(c.items(), key = lambda k: (-k[1], k[0]))#reverse values in items
+for i in range(3):
+    print c[i][0], c[i][1]
