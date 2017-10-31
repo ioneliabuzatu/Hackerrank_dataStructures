@@ -1,0 +1,9 @@
+from collections import OrderedDict
+n=int(input())
+dic = OrderedDict()
+for i in range(n):
+    w = raw_input()
+    dic[w] = dic.get(w, 0) + 1
+print len(dic)
+for k in dic:
+    print dic[k],    
