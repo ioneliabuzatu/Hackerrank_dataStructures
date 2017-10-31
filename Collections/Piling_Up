@@ -1,0 +1,12 @@
+for _ in xrange(input()):
+    n = input()
+    numbers = map(int, raw_input().split())
+    l, r = 0, len(numbers)-1
+    stack = "Yes"
+    while l < r:
+        if min(numbers[l+1], numbers[r-1]) > max(numbers[l], numbers[r]):
+            stack = "No"
+            break
+        l += 1; r -= 1
+    print stack
+        
